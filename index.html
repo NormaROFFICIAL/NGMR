@@ -14,19 +14,25 @@
   <body>
     
     <!--Encabezado -->
+    
     <nav class="nav">
             <img src="img/DPL.png" alt="Logo Disney"
                 height="50px"; width="auto";>
-            <a class="nav-link" href="#">Inicio</a>
-            <a class="nav-link" href="#">Busqueda</a>
+                
+            <a class="nav-link" href="#">Inicio
+                
+            </a>
+            
             <a class="nav-link" href="#">Mi lista</a>
             <a class="nav-link" href="#">Originales</a>
             <a class="nav-link" href="#">Peliculas</a>
             <a class="nav-link" href="#">Series</a>
+            
         <div class="ml-auto">
             <a class="nav-user" href="#">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                    
                 </button>
             </a>
             <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
@@ -45,9 +51,72 @@
                     </li>
                 </ul>
             </div>
+            
         </div>
-
+        <div class="input-group">
+            <div class="input-group-text" id="btnGroupAddon"><img src="img/LI.png" alt="icono lupa"
+                height="20px"; width="auto";></div>
+            <input type="text" class="form-control" placeholder="Venom" aria-label="Input group example" aria-describedby="btnGroupAddon">
+            <button>Buscar</button>
+          </div>
       </nav> 
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>  
+      <div>
+        <label class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="">
+        Aceptar terminos y condiciones
+      </label>
+      <button>Confirmar</button>
+    </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Registrate</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registrate</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Correo electronico:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <form>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            
+          </form>
+          
+          <form>
+            <label for="password">Repetir contraseña:</label>
+            <input type="password" id="password" name="password">
+            
+          </form>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Registrarse</button>
+
+      </div>
+    </div>
+  </div>
+</div>
     <!--Cuerpo-->
     <div>
         <!--Carrusel-->
